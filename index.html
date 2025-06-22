@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>r/unixporn Rice Showcase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>r/unixporn Rice Showcase</h1>
+        <p>Curated desktop configurations from the community</p>
+        <div class="submit-section">
+            <div class="submit-form">
+                <input type="url" id="redditUrl" placeholder="https://reddit.com/r/unixporn/comments/..." required>
+                <button id="submitBtn" onclick="submitRice()">Submit Rice</button>
+            </div>
+            <p class="submit-info">Submit a r/unixporn post to be reviewed for inclusion</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="rice-grid" id="riceGrid">
+            <!-- Sample rice entries -->
+            <div class="rice-card">
+                <div class="rice-header">
+                    <div class="username">u/example_user</div>
+                    <div class="rice-title">[i3] My first rice! Clean and minimal setup</div>
+                </div>
+                <div class="media-container">
+                    <img src="https://via.placeholder.com/600x400/1a1a1a/ff6b35?text=Desktop+Screenshot" alt="Desktop Screenshot" class="rice-image">
+                </div>
+                <a href="#" class="post-link">View on Reddit →</a>
+                <div class="stats">
+                    <span>↑ 1.2k</span>
+                    <span>💬 45</span>
+                </div>
+            </div>
+            
+            <div class="rice-card">
+                <div class="rice-header">
+                    <div class="username">u/another_user</div>
+                    <div class="rice-title">[bspwm] Dark theme with custom polybar</div>
+                </div>
+                <div class="media-container gallery">
+                    <img src="https://via.placeholder.com/300x200/1a1a1a/ff6b35?text=Image+1" alt="Screenshot 1" class="rice-image">
+                    <img src="https://via.placeholder.com/300x200/1a1a1a/ff6b35?text=Image+2" alt="Screenshot 2" class="rice-image">
+                    <img src="https://via.placeholder.com/300x200/1a1a1a/ff6b35?text=Image+3" alt="Screenshot 3" class="rice-image">
+                    <img src="https://via.placeholder.com/300x200/1a1a1a/ff6b35?text=Image+4" alt="Screenshot 4" class="rice-image">
+                </div>
+                <a href="#" class="post-link">View on Reddit →</a>
+                <div class="stats">
+                    <span>↑ 856</span>
+                    <span>💬 23</span>
+                </div>
+            </div>
+            
+            <div class="rice-card">
+                <div class="rice-header">
+                    <div class="username">u/video_user</div>
+                    <div class="rice-title">[awesome] Animated workspace switching demo</div>
+                </div>
+                <div class="media-container">
+                    <video class="rice-video" controls>
+                        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <a href="#" class="post-link">View on Reddit →</a>
+                <div class="stats">
+                    <span>↑ 2.1k</span>
+                    <span>💬 67</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
